@@ -3,34 +3,33 @@ def create_an_empty_array
 end
 
 def create_an_array
-[dog, cat, pig, fish]
+  pets = ["dog", "cat", "pig", "fish"]
 end
 
 def add_element_to_end_of_array(array, element)
-  create_an_array << "horse"
+  pets << "horse"
 end
 
 def add_element_to_start_of_array(array, element)
-  create_an_array.unshift("lizard")
-
+  pets.unshift("hamster")
 end
 
 def remove_element_from_end_of_array(array)
-  fish = create_an_array.pop
+  fish = pets.pop
 end
 
 def remove_element_from_start_of_array(array)
-  dog = create_an_array.shift
+  dog = pets.shift
 end
 
 def retrieve_element_from_index(array, index_number)
-  create_an_array[1]
+  pets[1]
 end
 
 def retrieve_first_element_from_array(array)
-  create_an_array[0]
+  pets[0]
 end
 
 def retrieve_last_element_from_array(array)
-  create_an_array[-1]
+  pets[-1]
 end
